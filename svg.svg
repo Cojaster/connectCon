@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 200">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8FD2FF"/>
+      <stop offset="50%" stop-color="#4A8CFF"/>
+      <stop offset="100%" stop-color="#1E63D8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Símbolo -->
+  <g transform="translate(20,20)">
+    <path
+      d="M80,20
+         A60,60 0 1,0 80,140
+         L96,118
+         A34,34 0 1,1 96,42
+         Z"
+      fill="url(#blueGrad)"/>
+
+    <path
+      d="M103,25
+         L128,40
+         L116,58
+         L93,44
+         Z"
+      fill="#B7E6FF"/>
+  </g>
+
+  <!-- Texto -->
+  <text
+      x="165"
+      y="105"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="74"
+      font-weight="700"
+      fill="#FFFFFF"
+      letter-spacing="1">
+      CONNECT
+  </text>
+
+  <text
+      x="540"
+      y="105"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="74"
+      font-weight="700"
+      fill="#2E7BFF"
+      letter-spacing="1">
+      CON
+  </text>
+</svg>
