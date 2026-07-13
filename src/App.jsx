@@ -62,55 +62,157 @@ function App() {
 
         </header>
 
-        <main>
+<main className="dashboard">
+
+    <div className="cards">
+
+        <div className="card">
+            <span className="card-title">Órdenes de Trabajo</span>
+            <h2>128</h2>
+            <small>+15% este mes</small>
+        </div>
+
+        <div className="card">
+            <span className="card-title">Actividades Completadas</span>
+            <h2>96</h2>
+            <small>75% completado</small>
+        </div>
+
+        <div className="card">
+            <span className="card-title">En Proceso</span>
+            <h2>32</h2>
+            <small>5 críticas</small>
+        </div>
+
+        <div className="card">
+            <span className="card-title">Retrasos</span>
+            <h2>7</h2>
+            <small>Requieren atención</small>
+        </div>
+
+    </div>
 
 
 
-        <section className="cards">
+    <div className="row">
 
-          <div className="card">
-            <p>Órdenes de Trabajo</p>
-            <h1>128</h1>
-          </div>
+        <div className="panel">
 
-          <div className="card">
-            <p>Completadas</p>
-            <h1>96</h1>
-          </div>
+            <div className="panel-header">
+                <h3>Órdenes por Estado</h3>
+            </div>
 
-          <div className="card">
-            <p>En Proceso</p>
-            <h1>32</h1>
-          </div>
+            <div className="chart-placeholder donut">
 
-          <div className="card">
-            <p>Retrasos</p>
-            <h1>7</h1>
-          </div>
+                <div className="donut-circle"></div>
 
-        </section>
+            </div>
 
-        <section className="grid">
+        </div>
 
-          <div className="panel">
-            <h3>Órdenes por Estado</h3>
-          </div>
 
-          <div className="panel">
-            <h3>Órdenes por Área</h3>
-          </div>
 
-          <div className="panel">
-            <h3>Actividades Recientes</h3>
-          </div>
+        <div className="panel">
 
-          <div className="panel">
-            <h3>Alertas Activas</h3>
-          </div>
+            <div className="panel-header">
+                <h3>Órdenes por Área</h3>
+            </div>
 
-        </section>
+            <div className="chart-placeholder bars">
 
-        </main>
+                <div className="bar b1"></div>
+                <div className="bar b2"></div>
+                <div className="bar b3"></div>
+                <div className="bar b4"></div>
+                <div className="bar b5"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div className="bottom-grid">
+
+        <div className="panel">
+
+            <div className="panel-header">
+                <h3>Actividades Recientes</h3>
+            </div>
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>Actividad</th>
+                    <th>Orden</th>
+                    <th>Estado</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody>
+
+                <tr>
+
+                    <td>Inspección</td>
+                    <td>OT-1001</td>
+                    <td>✔</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Mantenimiento</td>
+                    <td>OT-1002</td>
+                    <td>⏳</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Revisión</td>
+                    <td>OT-1003</td>
+                    <td>✔</td>
+
+                </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <div className="panel alerts">
+
+            <div className="panel-header">
+                <h3>Alertas</h3>
+            </div>
+
+            <div className="alert warning">
+                Orden OT-1020 retrasada
+            </div>
+
+            <div className="alert danger">
+                Stock crítico de filtros
+            </div>
+
+            <div className="alert success">
+                SAP sincronizado correctamente
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
       </div>
         
 
